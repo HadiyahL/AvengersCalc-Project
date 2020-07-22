@@ -7,19 +7,19 @@ html {
   font-size: 10px;
 }
 body {
-  background-image: linear-gradient(to right, #4b4b7e, #8484f0);
+  background-image: linear-gradient(to right, #022223, #045B5D);
   font-family: "Montserrat", sans-serif;
 }
 .calculator {
   width: 35rem;
   height: 50rem;
   border-radius: 2rem;
-  margin: 3em auto;
-  background-color: black;
+  margin: 10rem auto;
+  background-color: #212222;
   box-shadow: 0 0 1em white;
 }
 .header {
-  color: orangered;
+  color: #DD4518;
   text-align: center;
   padding: 1em;
 }
