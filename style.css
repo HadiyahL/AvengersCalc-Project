@@ -47,15 +47,68 @@ body {
 }
 .calculator-keys {
   padding: 2rem;
-  display: grid; 
+  display: grid;
   grid-template-columns: repeat(5, auto);
   grid-template-areas:
-    "....."
+    "pie x-squared percent divide expand"
     "seven eight nine times expand"
     "four five six plus expand"
     "one two three minus expand"
     "zero decimal clear equal expand";
 }
+
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.zero {
+  grid-area: zero;
+}
+.decimal {
+  grid-area: decimal;
+}
+.clear {
+  grid-area: clear;
+}
+.times {
+  grid-area: times;
+}
+.plus {
+  grid-area: plus;
+}
+.minus {
+  grid-area: minus;
+}
+.equal {
+  grid-area: equal;
+}
+.expand {
+  grid-area: expand;
+}
+
 .btn {
   width: 6rem;
   height: 6rem;
@@ -71,6 +124,14 @@ body {
 .btn_green {
   background-color: #045b5d;
   color: #00f7ff;
+}
+.btn_green:active,
+.btn_green:focus {
+  background-color: #02393a;
+}
+.btn_grey:active,
+.btn_grey:focus {
+  background-color: #1d1c1c;
 }
 .btn_fontSpecial {
   font-family: "Times New Roman", Times, serif;
