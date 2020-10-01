@@ -5,9 +5,11 @@
 }
 html {
   font-size: 10px;
+  /* font-weight: 400; */
+  line-height: 1.4;
 }
 body {
-  background-image: linear-gradient(to right, #022223, #045B5D);
+  background-image: linear-gradient(to right, #022223, #045b5d);
   font-family: "Montserrat", sans-serif;
 }
 .calculator {
@@ -19,7 +21,7 @@ body {
   box-shadow: 0 0 1em white;
 }
 .header {
-  color: #DD4518;
+  color: #dd4518;
   text-align: center;
   padding: 1em;
 }
@@ -43,10 +45,16 @@ body {
   color: white;
   font-size: 3.5rem;
 }
-.buttons {
-  /* padding: 2rem; */
-  display: flex;
-  flex-wrap: wrap;
+.calculator-keys {
+  padding: 2rem;
+  display: grid; 
+  grid-template-columns: repeat(5, auto);
+  grid-template-areas:
+    "....."
+    "seven eight nine times expand"
+    "four five six plus expand"
+    "one two three minus expand"
+    "zero decimal clear equal expand";
 }
 .btn {
   width: 6rem;
@@ -61,11 +69,11 @@ body {
   margin: 1rem;
 }
 .btn_green {
-  background-color: #045B5D;
-  color: #00F7FF;
+  background-color: #045b5d;
+  color: #00f7ff;
 }
 .btn_fontSpecial {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 4rem;
 }
 
